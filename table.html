@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,tr,td,th {
+            border: 2px solid rgb(0, 0, 0) ;
+            text-align:center;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+
+<ul>
+    <h4> Table</h4>
+    <table style="width:50%;">    <!-- start of table-->
+        <!--Table Body-->
+        <tr> <!-- table row-->
+            <th> <!--Table Heading -->
+                Countries
+            </th>
+            <th>
+                States
+            </th>
+            <th>
+                population
+            </th>
+
+
+        </tr>
+
+
+        <!-- Table Head-->
+        <tr>
+            <td> <!-- Table Data -->
+                India
+            </td>
+            <td>
+                Maharashtra
+            </td>
+            <td>
+                25,020
+            </td>
+        </tr>
+        <!-- Table Foot-->
+        <tr>
+            <td> <!-- Table Data -->
+                America
+            </td>
+            <td>
+                California
+            </td>
+            <td>
+                50,250
+            </td>
+        </tr>
+    </table>
+    <!--
+        Marging of Cells:
+          -Rows
+          -Rowspan  -> Merging number of Rows cells
+         
+           -Colspan  -> Merging number of columns cells
+         
+     -->
+
+    <h4> Rowspan Example</h4>
+    <table style="width:50%;">
+        <tbody>
+            <tr>
+            <td rowspan="3">  value </td>  <!-- Merges two rows-->
+            <td> value</td>
+            <td> value</td>
+            </tr>
+            <tr>
+                <td> value</td>
+                <td> value</td>
+            </tr>
+            <tr>
+                <td> value</td>
+                <td> value</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4> Colspan Example</h4>
+    <table style="width:50%;">
+        <tbody>
+            <tr>
+            <td> value</td>
+            <td> value</td>
+            <td> value</td>
+            </tr>
+            <tr>
+                <td colspan="2"> value</td> <!-- Merging 2 Column's cells-->
+                <td> value</td>
+
+            </tr>
+            <tr>
+                <td> value</td>
+                <td> value</td>
+                <td> value</td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+    <h4> Table </h4>
+    <table style="width:50%;">
+        <tbody>
+            <th>ID</th>
+            <th colspan="2"> PRODUCT</th>
+            <tr>
+                <td rowspan="2">  1 </td>
+                <td colspan="2"> VALUE </td>
+            </tr>
+            <tr>
+                <td> VALUE</td>
+                <td rowspan="2">  VALUE </td>
+            </tr>
+            <tr>
+                <td> 2</td>
+                <td> VALUE</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h4> Table </h4>
+    <table style="width:50%;">
+        <tbody>
+            <th> ID </th>
+            <th> PRODUCT</th>
+            <th> PRICE </th>
+            <tr>
+                <td rowspan="2">  1 </td>
+                <td> VALUE </td>
+                <td rowspan="3">  VALUE </td>
+            </tr>
+            <tr>
+                <td> VALUE </td>
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <td> VALUE </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<h3>Lists</h3>
+<!--
+    Lists
+    -Turnind the data element into the listing part.
+    -Typess of list
+      -Ordered list
+      -Unordered list
+      -Description list
+    -->
+
+ <h4>Ordered List</h4>
+ <!--
+    -An ordered list is atype of list
+    -It carries the data elements in an ordered format.
+    -Denoted by .
+ -->   
+    <ol>    <!--Ordered List-->
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Js</li>
+    </ol>
+
+    <h4>UnOrdered List</h4>
+<!--
+     -An ordered list is atype of list
+    -It carries the data elements in an ordered format.
+    -Denoted by Bullets.
+-->
+<ul>
+<!--Unordered List-->
+<li>HTML</li>
+<li>CSS</li>
+<li>Js</li>
+</ul>
+
+<ul style="list-style-type: none;"> <!--UnOrdered List-->
+<li>HTML</li>
+<li>CSS</li>
+<li>Js</li>
+</ul>
+
+<h4>Description List</h4>
+<!--
+     -An Description list is atype of list
+    -It carries the data elements in an Description format.
+    -It provide a description for all the terms/names.
+-->
+<dl> <!--Description List-->
+   <dt>HTML</dt> <!--Description term-->
+   <dd>Hyper Text Markup Language</dd>  <!-- Description data-->
+   <dt>CSS</dt>
+   <dd>Cascading Style Sheet</dd> 
+   <dt>Js</dt>
+   <dd>JavaScript</dd> 
+
+</dl>
+
+
+</body>
+
+</html>

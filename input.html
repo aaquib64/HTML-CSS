@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <form action="" validate>
+        <!--
+            novalidate
+              -Novalidate attribute specifies that the form data should not be validated when submitted.
+            validate 
+               -Validate attribute specifies that the form data should be validated when submitted.
+        -->
+        <label for="name"> First Name:</label>
+        <input type="text" id="name" autocomplete="on"/>
+        <br><br>
+        <!--
+            Autocomplete attribute allows the browser to predict the value, when a user start to type in the respective field.
+            Autofill in the input field , based on earlier typed values.
+        -->
+
+        <label for="pass"> Password</label>
+        <input type="password" id="pass" autofocus/>
+        <br><br>
+        <!--
+            Autofocus attribute specifies that the element shiuld be automatically get focused when the page loads.   
+        -->
+        <label for="appoinment"> Select a time</label>
+        <input type="time" id="appoinment"/>
+        <br><br>
+         <!--
+             Type-time helps in inserting a proper time in the system.    
+        -->
+
+        <label for="fav_color"> Select a Color</label>
+        <input type="color" id="fav_color" />
+        <br><br>
+
+        <label for="Telephone"> Select a Color</label>
+        <input type="tel" id="Telephone" />
+        <br><br>
+        
+        <label for="profile_url"> Profile URL</label>
+        <input type="url" id="profile_url"/>
+        <br><br>
+
+        <label for="resume"> Upload Resume(Single)</label>
+        <input type="file" id="resume"/>
+        <br><br>
+
+        <label for="Image"> Upload Image(Multiple)</label>
+        <input type="file" id="Image" multiple/>
+        <br><br>
+
+        <input type="submit"/>
+
+    </form>
+
+        <!--Output Tag-->
+      <h4>Output tag Example</h4>
+       <form oninput="sum.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="number" id="a" value="55">
+            <input type="number" id="b" value="5">
+            <output name="sum" for="a b"></output>
+        </form>
+
+   
+</body>
+</html>
